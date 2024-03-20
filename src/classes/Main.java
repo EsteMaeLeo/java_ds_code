@@ -1,4 +1,11 @@
 //
+
+package classes;
+
+class Node{
+
+}
+
 public class Main {
 
     public static void printItems(int n){
@@ -10,5 +17,11 @@ public class Main {
     public static void main(String[] args) {
 
         printItems(10);
+
+        Cookie cookieOne = new Cookie("green");
+        Cookie cookieTwo = new Cookie("red");
+
+        System.out.println(cookieOne.getColor());
+        System.out.println(cookieTwo.getColor());
     }
 }
