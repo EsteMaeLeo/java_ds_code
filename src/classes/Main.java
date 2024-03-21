@@ -1,11 +1,7 @@
 //
 
 package classes;
-
-class Node{
-
-}
-
+import pointers.Node;
 public class Main {
 
     public static void printItems(int n){
@@ -20,6 +16,8 @@ public class Main {
 
         Cookie cookieOne = new Cookie("green");
         Cookie cookieTwo = new Cookie("red");
+
+        Node newNode = new Node(3);
 
         System.out.println(cookieOne.getColor());
         System.out.println(cookieTwo.getColor());
