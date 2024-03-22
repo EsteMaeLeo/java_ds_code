@@ -13,7 +13,10 @@ public class Main {
     public static void main(String[] args) {
 
         linkedList myLinkedList = new linkedList(4);
-        System.out.println(myLinkedList.getLength());
+        myLinkedList.getHead();
+        myLinkedList.getTail();
+        myLinkedList.getLength();
+        myLinkedList.printList();
         /*printItems(10);
 
         //Cookie cookieOne = new Cookie("green");

@@ -21,7 +21,7 @@ public class linkedList {
         length = 1;
     }
 
-    public Node getHead() {
+    /*public Node getHead() {
         return this.head;
     }
 
@@ -32,5 +32,23 @@ public class linkedList {
     public int getLength() {
         return this.length;
 
+    }*/
+    public void getHead() {
+        System.out.println("Head: " + head.value);
+    }
+
+    public void getTail() {
+        System.out.println("Tail: " + tail.value);
+    }
+
+    public void getLength() {
+        System.out.println("Length: " + length);
+    }
+    public void printList() {
+        Node temp = head;
+        while (temp != null) {
+            System.out.println(temp.value);
+            temp = temp.next;
+        }
     }
 }
