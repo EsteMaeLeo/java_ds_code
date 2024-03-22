@@ -7,7 +7,7 @@ public class linkedList {
 
     class Node {
         int value;
-        classes.Node next;
+        Node next;
 
         public Node(int value) {
             this.value = value;

@@ -1,4 +1,4 @@
-package classes;
+package pointers;
 
 public class Node {
     int value;
