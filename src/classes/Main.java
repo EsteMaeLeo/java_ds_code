@@ -17,6 +17,8 @@ public class Main {
         myLinkedList.getTail();
         myLinkedList.getLength();
         myLinkedList.printList();
+        myLinkedList.append(2);
+        myLinkedList.printList();
         /*printItems(10);
 
         //Cookie cookieOne = new Cookie("green");
