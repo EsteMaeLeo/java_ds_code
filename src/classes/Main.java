@@ -1,7 +1,7 @@
 //
 
 package classes;
-import pointers.Node;
+
 public class Main {
 
     public static void printItems(int n){
@@ -12,14 +12,16 @@ public class Main {
     }
     public static void main(String[] args) {
 
-        printItems(10);
+        linkedList myLinkedList = new linkedList(4);
+        System.out.println(myLinkedList.getLength());
+        /*printItems(10);
 
-        Cookie cookieOne = new Cookie("green");
+        //Cookie cookieOne = new Cookie("green");
         Cookie cookieTwo = new Cookie("red");
 
         Node newNode = new Node(3);
 
         System.out.println(cookieOne.getColor());
-        System.out.println(cookieTwo.getColor());
+        System.out.println(cookieTwo.getColor());*/
     }
 }
