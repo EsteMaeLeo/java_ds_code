@@ -5,6 +5,7 @@ package classes;
 public class Main {
 
     public static void printItems(int n){
+
         for(int i =0; i<=n; i++){
             System.out.println("number: " + i);
         }
@@ -18,6 +19,10 @@ public class Main {
         myLinkedList.getLength();
         myLinkedList.printList();
         myLinkedList.append(2);
+        myLinkedList.append(8);
+        myLinkedList.append(6);
+        myLinkedList.printList();
+        myLinkedList.removeLast();
         myLinkedList.printList();
         /*printItems(10);
 

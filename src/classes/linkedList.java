@@ -42,9 +42,11 @@ public class linkedList {
     }
 
     public void getLength() {
+
         System.out.println("Length: " + length);
     }
     public void printList() {
+        System.out.println("List of nodes:");
         Node temp = head;
         while (temp != null) {
             System.out.println(temp.value);
@@ -63,5 +65,27 @@ public class linkedList {
             this.tail = newNode;
         }
         this.length++;
+    }
+
+    public Node removeLast(){
+        Node previousNode = this.head;
+        if(this.head == null){
+            return null;
+        }else{
+            Node temp = this.head;
+            while(temp.next !=null){
+                previousNode = temp;
+                temp = temp.next;
+            }
+            this.tail = previousNode;
+            this.tail.next = null;
+            this.length--;
+        }
+        if(length == 0){
+            this.tail = null;
+            this.head = null;
+        }
+        return previousNode;
+
     }
 }
