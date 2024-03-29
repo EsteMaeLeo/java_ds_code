@@ -36,6 +36,27 @@ public class Main {
         // (0) Items - Returns null
         System.out.println(myLinkedList2.removeLast());
 
+
+        System.out.println("Before prepend():");
+        System.out.println("-----------------");
+        myLinkedList.getHead();
+        myLinkedList.getTail();
+        myLinkedList.getLength();
+
+        System.out.println("\nLinked List:");
+        myLinkedList.printList();
+
+        myLinkedList.prepend(1);
+
+        System.out.println("\n\nAfter prepend():");
+        System.out.println("----------------");
+        myLinkedList.getHead();
+        myLinkedList.getTail();
+        myLinkedList.getLength();
+
+        System.out.println("\nLinked List:");
+        myLinkedList.printList();
+
         /*printItems(10);
 
         //Cookie cookieOne = new Cookie("green");
