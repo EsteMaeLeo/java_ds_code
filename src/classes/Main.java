@@ -24,6 +24,18 @@ public class Main {
         myLinkedList.printList();
         myLinkedList.removeLast();
         myLinkedList.printList();
+
+        System.out.println("Test Remove");
+        linkedList myLinkedList2 = new linkedList(1);
+        myLinkedList2.append(2);
+
+        // (2) Items - Returns 2 Node
+        System.out.println(myLinkedList2.removeLast().value);
+        // (1) Item - Returns 1 Node
+        System.out.println(myLinkedList2.removeLast().value);
+        // (0) Items - Returns null
+        System.out.println(myLinkedList2.removeLast());
+
         /*printItems(10);
 
         //Cookie cookieOne = new Cookie("green");

@@ -69,24 +69,25 @@ public class linkedList {
     }
 
     public Node removeLast() {
-        Node previousNode = this.head;
+
         if (length == 0) {
             return null;
-        } else {
-            Node temp = this.head;
-            while (temp.next != null) {
-                previousNode = temp;
-                temp = temp.next;
-            }
-            this.tail = previousNode;
-            this.tail.next = null;
-            this.length--;
         }
+        Node previousNode = this.head;
+        Node temp = this.head;
+        while (temp.next != null) {
+            previousNode = temp;
+            temp = temp.next;
+        }
+        this.tail = previousNode;
+        this.tail.next = null;
+        this.length--;
+
         if (length == 0) {
             this.tail = null;
             this.head = null;
         }
-        return previousNode;
+        return temp;
 
     }
 }
