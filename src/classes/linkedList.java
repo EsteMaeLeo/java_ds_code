@@ -91,14 +91,15 @@ public class linkedList {
 
     }
 
-    public void prepend(int value){
+    public void prepend(int value) {
         Node newNode = new Node(value);
-        if( this.length == 0){
+        if (this.length == 0) {
             this.head = newNode;
             this.tail = newNode;
+        } else {
+            newNode.next = this.head;
+            this.head = newNode;
         }
-        newNode.next = this.head;
-        this.head = newNode;
         this.length++;
     }
 }
