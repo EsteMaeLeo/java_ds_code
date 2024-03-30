@@ -102,4 +102,18 @@ public class linkedList {
         }
         this.length++;
     }
+
+    public Node removeFirst() {
+        if (this.length == 0) {
+            return null;
+        }
+        Node temp = this.head;
+        this.head = this.head.next;
+        this.length--;
+        if (this.length == 0) {
+            this.head = null;
+            this.tail = null;
+        }
+
+    }
 }
