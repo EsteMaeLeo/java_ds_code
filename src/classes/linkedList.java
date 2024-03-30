@@ -114,6 +114,6 @@ public class linkedList {
             this.head = null;
             this.tail = null;
         }
-
+    return temp;
     }
 }

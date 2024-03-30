@@ -57,6 +57,18 @@ public class Main {
         System.out.println("\nLinked List:");
         myLinkedList.printList();
 
+        myLinkedList.append(1);
+        System.out.println("\nRemove Linked List:");
+        myLinkedList.printList();
+        // (2) Items - Returns 2 Node
+        System.out.println("Remove first " + myLinkedList.removeFirst().value);
+        // (1) Item - Returns 1 Node
+        System.out.println("Remove first " + myLinkedList.removeFirst().value);
+        // (0) Items - Returns null
+        System.out.println("Remove first " + myLinkedList.removeFirst().value);
+        System.out.println("Remove first " + myLinkedList.removeFirst().value);
+        System.out.println("Remove first " + myLinkedList.removeFirst().value);
+        System.out.println("Remove first " + myLinkedList.removeFirst());
         /*printItems(10);
 
         //Cookie cookieOne = new Cookie("green");
