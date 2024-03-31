@@ -69,6 +69,15 @@ public class Main {
         System.out.println("Remove first " + myLinkedList.removeFirst().value);
         System.out.println("Remove first " + myLinkedList.removeFirst().value);
         System.out.println("Remove first " + myLinkedList.removeFirst());
+
+        System.out.println("\nGET Linked List:");
+        myLinkedList.append(1);
+        myLinkedList.append(12);
+        myLinkedList.append(14);
+        myLinkedList.append(16);
+        myLinkedList.append(2);
+        myLinkedList.printList();
+        System.out.println(myLinkedList.get(3).value);
         /*printItems(10);
 
         //Cookie cookieOne = new Cookie("green");
