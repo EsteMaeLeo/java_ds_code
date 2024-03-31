@@ -109,11 +109,16 @@ public class linkedList {
         }
         Node temp = this.head;
         this.head = this.head.next;
+        temp.next = null;
         this.length--;
         if (this.length == 0) {
             this.head = null;
             this.tail = null;
         }
-    return temp;
+        return temp;
+    }
+
+    public Node get(int index){
+
     }
 }
