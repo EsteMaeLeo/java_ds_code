@@ -119,7 +119,7 @@ public class linkedList {
     }
 
     public Node get(int index){
-        if(index < 0 && index > this.length){
+        if(index < 0 || index > this.length){
             return null;
         }
         Node temp = this.head;
@@ -128,5 +128,14 @@ public class linkedList {
         }
         return temp;
 
+    }
+
+    public boolean set(int index, int value){
+        if(index < 0 || index > this.length){
+            return false;
+        }
+        Node setNode = this.get(index);
+        setNode.value = value;
+        return true;
     }
 }
