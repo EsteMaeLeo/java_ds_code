@@ -78,6 +78,12 @@ public class Main {
         myLinkedList.append(2);
         myLinkedList.printList();
         System.out.println(myLinkedList.get(3).value);
+
+        myLinkedList.set(2, 99);
+
+        System.out.println("\nLinked List after set():");
+        myLinkedList.printList();
+
         /*printItems(10);
 
         //Cookie cookieOne = new Cookie("green");
