@@ -120,6 +120,30 @@ public class Main {
         System.out.println("LL after remove() of last node:");
         myLinkedList.printList();
 
+        System.out.println("LL before reverse():");
+        myLinkedList.printList();
+
+        myLinkedList.reverse();
+
+        System.out.println("\nLL after reverse():");
+        myLinkedList.printList();
+
+        System.out.println("\nMiddle List:");
+        letcode myList = new letcode(1);
+        myList.append(2);
+        myList.append(3);
+        myList.append(4);
+        myList.append(5);
+        letcode.Node1 middleNode = myList.findMiddleNode();
+        System.out.println("middle " + middleNode.value); // Output: 3
+
+        myList.append(6);
+        middleNode = myList.findMiddleNode();
+        System.out.println("middle " + middleNode.value);
+
+        myList.append(7);
+        middleNode = myList.findMiddleNode();
+        System.out.println("middle " + middleNode.value);
         /*printItems(10);
 
         //Cookie cookieOne = new Cookie("green");
