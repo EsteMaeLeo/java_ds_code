@@ -168,4 +168,22 @@ public class linkedList {
         this.length++;
         return true;
     }
+
+    public Node remove(int index) {
+        if (index < 0 || index >= this.length) {
+            return null;
+        }
+        if (index == 0) {
+            return this.removeFirst();
+        }
+        if (index == this.length -1) {
+            return this.removeLast();
+        }
+        Node before = get(index - 1);
+        Node temp = before.next;
+        before.next = temp.next;
+        temp.next = null;
+        this.length--;
+        return temp;
+    }
 }
