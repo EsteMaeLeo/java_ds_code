@@ -3,6 +3,7 @@ package classes;
 public class letcode {
     private Node1 head;
     private Node1 tail;
+    private int length;
 
     class Node1 {
         int value;
@@ -79,6 +80,26 @@ public class letcode {
             jump = jump.next.next;
         }
         return temp;
+    }
+
+    public boolean hasLoop() {
+        if(head == null){
+            return false;
+        }
+        if(length == 1){
+            return false;
+        }
+        Node1 slow = this.head;
+        Node1 fast = this.head;
+        while(fast!=null){
+
+            if(fast.next == slow){
+                return true;
+            }
+            slow = slow.next;
+            fast = fast.next.next;
+        }
+        return false;
     }
 
 }
