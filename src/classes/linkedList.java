@@ -148,4 +148,24 @@ public class linkedList {
         }
         return false;
     }
+
+    public boolean insert(int index, int value) {
+        if (index < 0 || index > this.length) {
+            return false;
+        }
+        if (index == 0) {
+            this.prepend(value);
+            return true;
+        }
+        if (index == this.length) {
+            this.append(value);
+            return true;
+        }
+        Node newNode = new Node(value);
+        Node temp = get(index - 1);
+        newNode.next = temp.next;
+        temp.next = newNode;
+        this.length++;
+        return true;
+    }
 }

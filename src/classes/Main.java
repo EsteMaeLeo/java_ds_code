@@ -77,12 +77,31 @@ public class Main {
         myLinkedList.append(16);
         myLinkedList.append(2);
         myLinkedList.printList();
-        System.out.println(myLinkedList.get(3).value);
+        System.out.println("get: " + myLinkedList.get(3).value);
 
         myLinkedList.set(2, 99);
 
         System.out.println("\nLinked List after set():");
         myLinkedList.printList();
+
+        System.out.println("LL before insert():");
+        myLinkedList.printList();
+
+        myLinkedList.insert(3, 22);
+
+        System.out.println("\nLL after insert(2) in middle:");
+        myLinkedList.printList();
+
+        myLinkedList.insert(0, 20);
+
+        System.out.println("\nLL after insert(0) at beginning:");
+        myLinkedList.printList();
+
+        myLinkedList.insert(7, 24);
+
+        System.out.println("\nLL after insert(4) at end:");
+        myLinkedList.printList();
+
 
         /*printItems(10);
 
